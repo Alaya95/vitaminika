@@ -1,0 +1,75 @@
+@import 'vars';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+@import 'reset';
+
+// Прижимаем  футер книзу
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: $mainFontColor;
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+// Общие стили
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.error {
+    color: #FF4141;
+}
+
+/* BLOCKS */
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/main';
+@import 'blocks/button';
+@import 'blocks/decor';
+@import 'blocks/common-cat';
+@import 'blocks/topic';
+@import 'blocks/side-btn';
+@import 'blocks/history';
+@import 'blocks/topcat';
+@import 'blocks/prod-card';
+@import 'blocks/footer';
+
+/* PAGE CATEGORY */
+@import 'blocks/breadcrumbs';
+@import 'blocks/category';
+@import 'blocks/title';
+@import 'blocks/pagination';
+
+/* PAGE PRODUCT */
+@import 'blocks/product';
+@import 'blocks/form';
+@import 'blocks/price';
+@import 'blocks/details';
+@import 'blocks/slider';
+@import 'blocks/slick-slider';
+@import 'blocks/popup';
+@import 'blocks/cart';
+@import 'blocks/number';
+@import 'blocks/order';
