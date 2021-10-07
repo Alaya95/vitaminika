@@ -1,5 +1,6 @@
 @import '_vars';
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
 @import '_reset';
@@ -42,6 +43,7 @@ body {
     color: #FF4141;
 }
 
+
 /* BLOCKS */
 @import 'blocks/_header';
 @import 'blocks/_nav';
@@ -55,6 +57,10 @@ body {
 @import 'blocks/_topcat';
 @import 'blocks/_prod-card';
 @import 'blocks/_footer';
+@import 'blocks/_address';
+@import 'blocks/_contacts';
+@import 'blocks/_registerForm';
+@import 'blocks/_login';
 
 /* PAGE CATEGORY */
 @import 'blocks/_breadcrumbs';

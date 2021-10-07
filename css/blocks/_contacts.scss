@@ -1,0 +1,16 @@
+.contacts {
+
+    &__info {
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-around;
+        margin-bottom: 17rem;
+        text-align: justify;
+
+        & p::first-letter {
+            margin-left: 3.5rem;
+        }
+    }
+}
