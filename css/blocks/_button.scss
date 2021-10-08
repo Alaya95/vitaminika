@@ -49,3 +49,36 @@
         background-color: $greyBg;
     }
 }
+
+.active {
+
+    &::before {
+        content: url('../img/arrow-down.svg');
+        display: block;
+        width: 4rem;
+        height: 4.5rem;
+        background-color: white;
+        position: absolute;
+        bottom: -1rem;
+        left: 16rem;
+        z-index: 3;
+        text-align: center;
+        transition: all .6s ease-in;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 22.5rem;
+        height: 6rem;
+        background-color: white;
+        position: absolute;
+        bottom: -1rem;
+        left: 1rem;
+        z-index: -1;
+        text-align: center;
+        transition: all .2s linear;
+    } 
+    
+   
+}
