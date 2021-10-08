@@ -997,18 +997,33 @@ body.lock {
   margin-right: 0.5rem;
 }
 
+.contacts {
+  margin-bottom: 8rem;
+}
+
 .contacts__info {
-  height: 40rem;
   display: flex;
   flex-direction: column;
   align-content: space-around;
   justify-content: space-around;
-  margin-bottom: 17rem;
   text-align: justify;
+}
+
+.contacts__info p {
+  margin-bottom: 5rem;
 }
 
 .contacts__info p::first-letter {
   margin-left: 3.5rem;
+}
+
+@media (max-width: 600px) {
+  .contacts {
+    margin-bottom: 15rem;
+  }
+  .contacts__info p {
+    margin-bottom: 5rem;
+  }
 }
 
 .registration {
@@ -1109,6 +1124,109 @@ body.lock {
   }
   .login__form label, .login__form input {
     width: 90%;
+  }
+}
+
+@media (min-width: 601px) {
+  .login__form label, .login__form input {
+    width: 50rem;
+  }
+}
+
+.feedback {
+  margin-bottom: 15rem;
+}
+
+.feedback__title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  font-size: 2.5rem;
+  color: #372821;
+  position: relative;
+}
+
+.feedback__title::before {
+  content: '';
+  display: block;
+  background-color: #372821;
+  width: .2rem;
+  height: 6.6rem;
+  position: absolute;
+  top: -8rem;
+  left: 8.5rem;
+}
+
+.feedback__title::after {
+  content: '';
+  display: block;
+  background-color: #372821;
+  width: 6.7rem;
+  height: .2rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 54rem;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__form label {
+  margin-bottom: 1rem;
+  width: 30rem;
+}
+
+.feedback__form input {
+  width: 50rem;
+}
+
+.feedback__form textarea {
+  width: 50rem;
+  height: fit-content;
+}
+
+.feedback__form input, .feedback__form textarea {
+  padding: 1rem 1.5rem;
+}
+
+.feedback__form .checkbox {
+  display: flex;
+  width: 50rem;
+  margin-bottom: 2rem;
+}
+
+.feedback__form .checkbox input {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.feedback__form P {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 600px) {
+  .fedback__form {
+    justify-content: center;
+  }
+  .fedback__form label, .fedback__form input, .fedback__form textarea {
+    width: 85%;
+  }
+  .fedback__form label {
+    margin-bottom: 5rem;
   }
 }
 

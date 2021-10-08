@@ -1,16 +1,37 @@
 .contacts {
-
+    margin-bottom: 8rem;
     &__info {
-        height: 40rem;
         display: flex;
         flex-direction: column;
         align-content: space-around;
         justify-content: space-around;
-        margin-bottom: 17rem;
         text-align: justify;
+
+        & p {
+            margin-bottom: 5rem;
+        }
+        
 
         & p::first-letter {
             margin-left: 3.5rem;
         }
     }
 }
+
+
+@media (max-width: 600px) {
+
+    .contacts {
+        margin-bottom: 15rem;
+
+        &__info {
+            & p {
+                margin-bottom: 5rem;
+            }
+
+        }
+
+    }
+}
+
+  
