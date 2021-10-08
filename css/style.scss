@@ -1,8 +1,9 @@
-@import 'vars';
+@import '_vars';
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
-@import 'reset';
+@import '_reset';
 
 // Прижимаем  футер книзу
 html,
@@ -42,34 +43,40 @@ body {
     color: #FF4141;
 }
 
+
 /* BLOCKS */
-@import 'blocks/header';
-@import 'blocks/nav';
-@import 'blocks/main';
-@import 'blocks/button';
-@import 'blocks/decor';
-@import 'blocks/common-cat';
-@import 'blocks/topic';
-@import 'blocks/side-btn';
-@import 'blocks/history';
-@import 'blocks/topcat';
-@import 'blocks/prod-card';
-@import 'blocks/footer';
+@import 'blocks/_header';
+@import 'blocks/_nav';
+@import 'blocks/_main';
+@import 'blocks/_button';
+@import 'blocks/_decor';
+@import 'blocks/_common-cat';
+@import 'blocks/_topic';
+@import 'blocks/_side-btn';
+@import 'blocks/_history';
+@import 'blocks/_topcat';
+@import 'blocks/_prod-card';
+@import 'blocks/_footer';
+@import 'blocks/_address';
+@import 'blocks/_contacts';
+@import 'blocks/_registerForm';
+@import 'blocks/_login';
 
 /* PAGE CATEGORY */
-@import 'blocks/breadcrumbs';
-@import 'blocks/category';
-@import 'blocks/title';
-@import 'blocks/pagination';
+@import 'blocks/_breadcrumbs';
+@import 'blocks/_category';
+@import 'blocks/_title';
+@import 'blocks/_pagination';
 
 /* PAGE PRODUCT */
-@import 'blocks/product';
-@import 'blocks/form';
-@import 'blocks/price';
-@import 'blocks/details';
-@import 'blocks/slider';
-@import 'blocks/slick-slider';
-@import 'blocks/popup';
-@import 'blocks/cart';
-@import 'blocks/number';
-@import 'blocks/order';
+@import 'blocks/_product';
+@import 'blocks/_form';
+@import 'blocks/_price';
+@import 'blocks/_details';
+@import 'blocks/_slider';
+@import 'blocks/_slick-slider';
+@import 'blocks/_popup';
+@import 'blocks/_cart';
+@import 'blocks/_number';
+@import 'blocks/_order';
+@import '_slick';
